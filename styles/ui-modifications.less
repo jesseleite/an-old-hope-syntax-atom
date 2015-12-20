@@ -1,0 +1,75 @@
+@import "colors";
+
+// Only apply these styles if user adds class hook to body element.
+// This can be done in user's init script.
+// ie) document.body.classList.add('earthsung-modify-ui')
+.earthsung-modify-ui {
+
+    // Giving line numbers room to breathe.
+    atom-text-editor::shadow {
+        .line-number {
+            padding-left: 18px !important;
+        }
+    }
+
+    // Match One Dark UI's component colours to Earthsong syntax theme.
+    .tab-bar {
+        .tab {
+            .title {
+                color: @brown;
+            }
+
+            &.active .title {
+                color: lighten(@very-light-brown, 10%);
+            }
+
+            .close-icon {
+                color: @yellow !important;
+            }
+        }
+    }
+
+    a.link {
+        color: @yellow;
+
+        &:hover {
+            color: lighten(@yellow, 10%);
+        }
+    }
+
+    .tree-view {
+        .header.list-item,
+        .list-item {
+            color: lighten(@light-brown, 10%);
+        }
+    }
+
+    .status-bar,
+    .status-bar a,
+    .status-bar div {
+        color: @brown;
+    }
+
+    .status-added,
+    .status-added > .list-item {
+        color: lighten(@green, 7%) !important;
+    }
+
+    .status-modified,
+    .status-modified > .list-item {
+        color: lighten(@yellow, 13%) !important;
+    }
+
+    .status-removed {
+        color: @red !important;
+    }
+
+    .status-renamed {
+        color: @dark-green !important;
+    }
+
+    .status-ignored,
+    .status-ignored > .list-item {
+        color: @brown !important;
+    }
+}
