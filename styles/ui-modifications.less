@@ -5,16 +5,23 @@
 // ie) document.body.classList.add('an-old-hope-modify-ui')
 .an-old-hope-modify-ui {
 
-    // Giving line numbers room to breathe.
     atom-text-editor::shadow {
         .line-number {
             padding-left: 18px !important;
         }
     }
 
-    // Match One Dark UI's component colours to Earthsong syntax theme.
+    atom-text-editor[mini].is-focused {
+        border-color: @artoo;
+        box-shadow: 0 0 0 1px @artoo;
+    }
+
     .tab-bar {
         .tab {
+            &::before {
+                background: @artoo;
+            }
+
             .title {
                 color: @grey;
             }
@@ -33,7 +40,7 @@
         color: @threepio;
 
         &:hover {
-            color: lighten(@threepio, 10%);
+            color: @luke;
         }
     }
 
@@ -41,6 +48,22 @@
         .header.list-item,
         .list-item {
             color: lighten(@light-grey, 10%);
+        }
+    }
+
+    .settings-view {
+        input[type="checkbox"]:checked {
+            background-color: @yoda;
+        }
+
+        button.selected,
+        .btn.btn-default.selected,
+        .btn.btn-info {
+            background: @artoo;
+
+            &:hover {
+                background: lighten(@artoo, 10%);
+            }
         }
     }
 
