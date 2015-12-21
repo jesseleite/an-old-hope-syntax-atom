@@ -1,6 +1,6 @@
 # An Old Hope
 
-Atom theme based on A New Hope movie poster, with a sprinkle of Yoda.
+Atom theme inspired by a galaxy far far away...
 
 ## UI Integration
 
@@ -12,4 +12,4 @@ document.body.classList.add('an-old-hope-modify-ui')
 
 ## Screenshot
 
-![A screenshot of your theme]()
+![A screenshot of your theme](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/screenshot.png)

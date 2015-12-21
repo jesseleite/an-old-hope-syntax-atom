@@ -11,7 +11,7 @@ class Jedi extends Model
      *
      * @var string
      */
-    const HERO = 'Luke';
+    const HERO = 'Luke Skywalker';
 
     /**
      * These aren't the droids you're looking for.
@@ -23,6 +23,11 @@ class Jedi extends Model
         'C-3PO',
     ];
 
+    /**
+     * Ask Ben for advice.
+     *
+     * @return string
+     */
     public function askKenobi()
     {
         if ($this->blindfolded()) {
