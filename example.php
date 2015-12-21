@@ -1,35 +1,34 @@
 <?php
 
-namespace Illuminate\Container;
+namespace Galaxy\Far\Far\Away;
 
-use Closure;
-use ArrayAccess\Something;
+use Illuminate\Database\Eloquent\Model;
 
-class Container implements ArrayAccess
+class Jedi extends Model
 {
     /**
-     * An array of the types that have been resolved.
+     * Define Hero.
+     *
+     * @var string
+     */
+    const HERO = 'Luke';
+
+    /**
+     * These aren't the droids you're looking for.
      *
      * @var array
      */
-    protected $resolved = [
-        'some array' => 'data',
+    protected $droids = [
+        'R2-D2',
+        'C-3PO',
     ];
 
-    /**
-     * Determine if a given type is shared.
-     *
-     * @param  string  $abstract
-     * @return bool
-     */
-    public function isShared($abstract)
+    public function askKenobi()
     {
-        if (isset($this->bindings[$abstract]['shared'])) {
-            $shared = $this->bindings[$abstract]['shared'];
-        } else {
-            $shared = false;
+        if ($this->blindfolded()) {
+            return $this->useTheForceLuke();
         }
 
-        return isset($this->instances[$abstract]) || $shared === true;
+        return $this->searchFeelings();
     }
 }
