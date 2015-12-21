@@ -12,7 +12,9 @@ class Container implements ArrayAccess
      *
      * @var array
      */
-    protected $resolved = Something::class;
+    protected $resolved = [
+        'some array' => 'data',
+    ];
 
     /**
      * Determine if a given type is shared.
