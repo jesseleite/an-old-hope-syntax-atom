@@ -1,18 +1,15 @@
 {
-  "name": "earthsung-by-jackson-syntax",
+  "name": "an-old-hope-syntax",
   "theme": "syntax",
-  "version": "0.3.0",
-  "description": "A port of Dayle Rees' Earthsong theme.",
+  "version": "0.0.0",
+  "description": "Theme based on A New Hope movie poster, with a sprinkle of Yoda.",
   "keywords": [
     "syntax",
     "theme",
-    "dayle",
-    "rees",
-    "earthsong",
-    "earthsung",
-    "port"
+    "star wars",
+    "a new hope"
   ],
-  "repository": "https://github.com/jesseleite/earthsung-by-jackson-syntax-atom",
+  "repository": "https://github.com/jesseleite/an-old-hope-syntax-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

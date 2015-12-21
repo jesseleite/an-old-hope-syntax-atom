@@ -3,14 +3,8 @@
 namespace Illuminate\Container;
 
 use Closure;
-use ArrayAccess;
+use ArrayAccess\Something;
 
-/**
- * Theme: Earthsung By Jackson
- * Nothing to do with Michael Jackson.
- *
- * Originally by Dayle Rees, Atom port by Jesse Leite.
- */
 class Container implements ArrayAccess
 {
     /**
@@ -18,7 +12,7 @@ class Container implements ArrayAccess
      *
      * @var array
      */
-    protected $resolved = array();
+    protected $resolved = Something::class;
 
     /**
      * Determine if a given type is shared.
@@ -28,21 +22,12 @@ class Container implements ArrayAccess
      */
     public function isShared($abstract)
     {
-        if (isset($this->bindings[$abstract]['shared']))
-        {
+        if (isset($this->bindings[$abstract]['shared'])) {
             $shared = $this->bindings[$abstract]['shared'];
-        }
-
-        if (isset($this->bindings[$abstract]['shared']))
-        {
-            $shared = $this->bindings[$abstract]['shared'];
-        }
-        else
-        {
+        } else {
             $shared = false;
         }
 
         return isset($this->instances[$abstract]) || $shared === true;
     }
-
 }

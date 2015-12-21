@@ -35,7 +35,7 @@ atom-text-editor, :host {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-brown;
+    color: @light-grey;
   }
 
   .invisible {
@@ -63,80 +63,80 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @brown;
+  color: @grey;
 }
 
 .entity {
   &.name.type {
-    color: @very-light-brown;
+    color: @very-light-grey;
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @yoda;
   }
 }
 
 .keyword {
-  color: @red;
+  color: @blaster;
 
   &.control {
-    color: @red;
+    color: @blaster;
   }
 
   &.operator {
-    color: @red;
+    color: @blaster;
   }
 
   &.other.special-method {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.other.unit {
-    color: @red;
+    color: @blaster;
   }
 
   &.other.use {
-    color: @green;
+    color: @yoda;
   }
 
   &.other.namespace {
-    color: @green;
+    color: @yoda;
   }
 }
 
 .storage {
-  color: @green;
+  color: @yoda;
 
   &.modifier {
-    color: @red;
+    color: @blaster;
   }
 }
 
 .constant {
-  color: @red;
+  color: @luke;
 
   &.character.escape {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.numeric {
-    color: @red;
+    color: @blaster;
   }
 
   &.other.color {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.other.symbol {
-    color: @green;
+    color: @yoda;
   }
 }
 
 .variable {
-  color: @very-light-brown;
+  color: @very-light-grey;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: @blaster;
   }
 
   &.parameter.function {
@@ -145,23 +145,23 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .invalid.illegal {
-  background-color: @red;
+  background-color: @blaster;
   color: @syntax-background-color;
 }
 
 .string {
-  color: @yellow;
+  color: @artoo;
 
   &.regexp {
-    color: @dark-green;
+    color: @luke;
 
     .source.ruby.embedded {
-      color: @red;
+      color: @blaster;
     }
   }
 
   &.other.link {
-    color: @red;
+    color: @blaster;
   }
 }
 
@@ -183,87 +183,93 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.heading,
     &.identity {
-      color: @dark-green;
+      color: @luke;
     }
 
     &.bold {
-      color: @red;
+      color: @blaster;
       font-weight: bold;
     }
 
     &.italic {
-      color: @red;
+      color: @blaster;
       font-style: italic;
     }
   }
 
   &.section.embedded {
-    color: @very-light-brown;
+    color: @very-light-grey;
   }
 
 }
 
 .support {
   &.class {
-    color: @very-light-brown;
+    color: @very-light-grey;
   }
 
   &.function  {
-    color: @green;
+    color: @yoda;
 
     &.any-method {
-      color: @dark-green;
+      color: @luke;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.name.class, &.name.type.class {
-    color: @very-light-brown;
+    color: @very-light-grey;
   }
 
   &.name.section {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.name.tag {
-    color: @red;
+    color: @blaster;
   }
 
   &.other.attribute-name {
-    color: @dark-green;
+    color: @threepio;
 
     &.id {
-      color: @dark-green;
+      color: @yoda;
     }
   }
 }
 
 .meta {
   &.class {
-    color: @red;
+    color: @blaster;
   }
 
   &.link {
-    color: @red;
+    color: @blaster;
   }
 
   &.require {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.selector {
-    color: @red;
+    color: @blaster;
   }
 
   &.separator {
-    background-color: @brown;
+    background-color: @grey;
     color: @syntax-text-color;
   }
+}
+
+#selector {
+  margin-top: 22px;
+  font-style: italic;
+  content: "content";
 }
 
 .none {
@@ -272,54 +278,54 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .markup {
   &.bold {
-    color: @red;
+    color: @blaster;
     font-weight: bold;
   }
 
   &.changed {
-    color: @red;
+    color: @blaster;
   }
 
   &.deleted {
-    color: @red;
+    color: @blaster;
   }
 
   &.italic {
-    color: @red;
+    color: @blaster;
     font-style: italic;
   }
 
   &.heading .punctuation.definition.heading {
-    color: @dark-green;
+    color: @luke;
   }
 
   &.inserted {
-    color: @green;
+    color: @yoda;
   }
 
   &.list {
-    color: @red;
+    color: @blaster;
   }
 
   &.quote {
-    color: @red;
+    color: @blaster;
   }
 
   &.raw.inline {
-    color: @green;
+    color: @yoda;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: @green;
+    color: @yoda;
   }
 }
 
 .source.php {
   .other.phpdoc {
-    color: @light-brown;
+    color: @light-grey;
   }
 }
 

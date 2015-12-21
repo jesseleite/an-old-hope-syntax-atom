@@ -2,8 +2,8 @@
 
 // Only apply these styles if user adds class hook to body element.
 // This can be done in user's init script.
-// ie) document.body.classList.add('earthsung-modify-ui')
-.earthsung-modify-ui {
+// ie) document.body.classList.add('an-old-hope-modify-ui')
+.an-old-hope-modify-ui {
 
     // Giving line numbers room to breathe.
     atom-text-editor::shadow {
@@ -16,60 +16,60 @@
     .tab-bar {
         .tab {
             .title {
-                color: @brown;
+                color: @grey;
             }
 
             &.active .title {
-                color: lighten(@very-light-brown, 10%);
+                color: lighten(@very-light-grey, 10%);
             }
 
             .close-icon {
-                color: @yellow !important;
+                color: @artoo !important;
             }
         }
     }
 
     a.link {
-        color: @yellow;
+        color: @threepio;
 
         &:hover {
-            color: lighten(@yellow, 10%);
+            color: lighten(@threepio, 10%);
         }
     }
 
     .tree-view {
         .header.list-item,
         .list-item {
-            color: lighten(@light-brown, 10%);
+            color: lighten(@light-grey, 10%);
         }
     }
 
     .status-bar,
     .status-bar a,
     .status-bar div {
-        color: @brown;
+        color: @grey;
     }
 
     .status-added,
     .status-added > .list-item {
-        color: lighten(@green, 7%) !important;
+        color: @yoda !important;
     }
 
     .status-modified,
     .status-modified > .list-item {
-        color: lighten(@yellow, 13%) !important;
+        color: @artoo !important;
     }
 
     .status-removed {
-        color: @red !important;
+        color: @blaster !important;
     }
 
     .status-renamed {
-        color: @dark-green !important;
+        color: @luke !important;
     }
 
     .status-ignored,
     .status-ignored > .list-item {
-        color: @brown !important;
+        color: @grey !important;
     }
 }
