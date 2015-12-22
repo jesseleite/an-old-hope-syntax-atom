@@ -341,8 +341,12 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.keyword.blade {
-  color: @yoda;
+.blade {
+  &.keyword,
+  &.entity,
+  &.punctuation {
+    color: @yoda;
+  }
 }
 
 atom-text-editor[mini] .scroll-view,
