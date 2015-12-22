@@ -1,6 +1,6 @@
 # An Old Hope
 
-Atom theme inspired by a galaxy far far away...
+Atom theme inspired by [a galaxy far far away...](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/a-new-hope.jpg)
 
 ## UI Integration
 
