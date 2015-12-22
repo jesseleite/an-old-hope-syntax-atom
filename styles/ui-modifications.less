@@ -47,7 +47,7 @@
     .tree-view {
         .header.list-item,
         .list-item {
-            color: lighten(@light-grey, 10%);
+            color: lighten(@light-grey, 5%);
         }
     }
 
@@ -70,7 +70,7 @@
     .status-bar,
     .status-bar a,
     .status-bar div {
-        color: @grey;
+        color: lighten(@dark-grey, 5%);
     }
 
     .status-added,
@@ -93,6 +93,6 @@
 
     .status-ignored,
     .status-ignored > .list-item {
-        color: @grey !important;
+        color: lighten(@dark-grey, 5%) !important;
     }
 }
