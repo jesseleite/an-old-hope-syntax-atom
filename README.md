@@ -14,4 +14,4 @@ document.body.classList.add('an-old-hope-modify-ui')
 
 ## Screenshot
 
-![A screenshot of your theme](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/screenshot.png)
+![screenshot](screenshot.png)
