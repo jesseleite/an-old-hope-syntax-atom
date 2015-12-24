@@ -2,7 +2,7 @@
 
 Atom theme inspired by [a galaxy far far away...](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/a-new-hope.jpg)
 
-![palette](palette.jpg)
+![palette](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/palette.jpg)
 
 ## UI Integration
 
@@ -14,4 +14,4 @@ document.body.classList.add('an-old-hope-modify-ui')
 
 ## Screenshot
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/JesseLeite/an-old-hope-syntax-atom/master/screenshot.png)
