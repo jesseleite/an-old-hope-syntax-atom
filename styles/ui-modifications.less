@@ -5,15 +5,15 @@
 // ie) document.body.classList.add('an-old-hope-modify-ui')
 .an-old-hope-modify-ui {
 
-    atom-text-editor::shadow {
-        .line-number {
-            padding-left: 18px !important;
+    .tree-view {
+        &::before {
+            background: @artoo;
         }
-    }
 
-    atom-text-editor[mini].is-focused {
-        border-color: @artoo;
-        box-shadow: 0 0 0 1px @artoo;
+        .header.list-item,
+        .list-item {
+            color: lighten(@light-grey, 5%);
+        }
     }
 
     .tab-bar {
@@ -36,41 +36,10 @@
         }
     }
 
-    a.link {
-        color: @yoda;
-
-        &:hover {
-            color: @yoda;
+    atom-text-editor::shadow {
+        .line-number {
+            padding-left: 18px !important;
         }
-    }
-
-    .tree-view {
-        .header.list-item,
-        .list-item {
-            color: lighten(@light-grey, 5%);
-        }
-    }
-
-    .settings-view {
-        input[type="checkbox"]:checked {
-            background-color: @artoo;
-        }
-
-        button.selected,
-        .btn.btn-default.selected,
-        .btn.btn-info {
-            background: @artoo;
-
-            &:hover {
-                background: lighten(@artoo, 10%);
-            }
-        }
-    }
-
-    .status-bar,
-    .status-bar a,
-    .status-bar div {
-        color: lighten(@dark-grey, 5%);
     }
 
     .status-added,
@@ -94,5 +63,87 @@
     .status-ignored,
     .status-ignored > .list-item {
         color: lighten(@dark-grey, 5%) !important;
+    }
+
+    .status-bar {
+        color: lighten(@dark-grey, 5%);
+
+        a,
+        div {
+            color: lighten(@dark-grey, 5%);
+        }
+
+        .deprecation-cop-status {
+            color: lighten(@luke, 10%);
+        }
+
+        .package-updates-status-view {
+            color: @yoda;
+        }
+    }
+
+    .settings-view {
+        input[type="checkbox"]:checked {
+            background-color: @artoo;
+        }
+
+        button.selected,
+        .btn.btn-default.selected,
+        .btn.btn-info {
+            background: @artoo;
+
+            &:hover {
+                background: lighten(@artoo, 10%);
+            }
+        }
+    }
+
+    .btn.btn-primary {
+        background: @artoo;
+    }
+
+    a.link {
+        color: @yoda;
+
+        &:hover {
+            color: @yoda;
+        }
+    }
+
+    atom-text-editor[mini].is-focused {
+        border-color: @artoo;
+        box-shadow: 0 0 0 1px @artoo;
+    }
+
+    .tooltip {
+        @tooltips: @yoda;
+
+        &.top .tooltip-arrow {
+          border-top-color: @tooltips;
+        }
+        &.top-left .tooltip-arrow {
+          border-top-color: @tooltips;
+        }
+        &.top-right .tooltip-arrow {
+          border-top-color: @tooltips;
+        }
+        &.right .tooltip-arrow {
+          border-right-color: @tooltips;
+        }
+        &.left .tooltip-arrow {
+          border-left-color: @tooltips;
+        }
+        &.bottom .tooltip-arrow {
+          border-bottom-color: @tooltips;
+        }
+        &.bottom-left .tooltip-arrow {
+          border-bottom-color: @tooltips;
+        }
+        &.bottom-right .tooltip-arrow {
+          border-bottom-color: @tooltips;
+        }
+        .tooltip-inner {
+            background: @tooltips;
+        }
     }
 }
