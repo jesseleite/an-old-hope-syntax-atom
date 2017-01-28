@@ -10,23 +10,23 @@
             background: @artoo;
         }
 
-        .header.list-item,
+        .syntax--header.list-item,
         .list-item {
             color: lighten(@light-grey, 5%);
         }
     }
 
     .tab-bar {
-        .tab {
+        .syntax--tab {
             &::before {
                 background: @artoo;
             }
 
-            .title {
+            .syntax--title {
                 color: @grey;
             }
 
-            &.active .title {
+            &.active .syntax--title {
                 color: lighten(@very-light-grey, 10%);
             }
 
@@ -36,7 +36,7 @@
         }
     }
 
-    atom-text-editor::shadow {
+    atom-text-editor.editor {
         .line-number {
             padding-left: 18px !important;
         }
@@ -102,7 +102,7 @@
         background: @artoo;
     }
 
-    a.link {
+    a.syntax--link {
         color: @yoda;
 
         &:hover {
@@ -115,10 +115,10 @@
         box-shadow: 0 0 0 1px @artoo;
     }
 
-    .tooltip {
+    .syntax--tooltip {
         @tooltips: @yoda;
 
-        &.top .tooltip-arrow {
+        &.syntax--top .tooltip-arrow {
           border-top-color: @tooltips;
         }
         &.top-left .tooltip-arrow {
@@ -127,13 +127,13 @@
         &.top-right .tooltip-arrow {
           border-top-color: @tooltips;
         }
-        &.right .tooltip-arrow {
+        &.syntax--right .tooltip-arrow {
           border-right-color: @tooltips;
         }
-        &.left .tooltip-arrow {
+        &.syntax--left .tooltip-arrow {
           border-left-color: @tooltips;
         }
-        &.bottom .tooltip-arrow {
+        &.syntax--bottom .tooltip-arrow {
           border-bottom-color: @tooltips;
         }
         &.bottom-left .tooltip-arrow {
