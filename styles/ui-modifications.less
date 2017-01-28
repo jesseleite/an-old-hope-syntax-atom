@@ -10,23 +10,23 @@
             background: @artoo;
         }
 
-        .syntax--header.list-item,
+        .header.list-item,
         .list-item {
             color: lighten(@light-grey, 5%);
         }
     }
 
     .tab-bar {
-        .syntax--tab {
+        .tab {
             &::before {
                 background: @artoo;
             }
 
-            .syntax--title {
+            .title {
                 color: @grey;
             }
 
-            &.active .syntax--title {
+            &.active .title {
                 color: lighten(@very-light-grey, 10%);
             }
 
@@ -102,7 +102,7 @@
         background: @artoo;
     }
 
-    a.syntax--link {
+    a.link {
         color: @yoda;
 
         &:hover {
@@ -115,10 +115,10 @@
         box-shadow: 0 0 0 1px @artoo;
     }
 
-    .syntax--tooltip {
+    .tooltip {
         @tooltips: @yoda;
 
-        &.syntax--top .tooltip-arrow {
+        &.top .tooltip-arrow {
           border-top-color: @tooltips;
         }
         &.top-left .tooltip-arrow {
@@ -127,13 +127,13 @@
         &.top-right .tooltip-arrow {
           border-top-color: @tooltips;
         }
-        &.syntax--right .tooltip-arrow {
+        &.right .tooltip-arrow {
           border-right-color: @tooltips;
         }
-        &.syntax--left .tooltip-arrow {
+        &.left .tooltip-arrow {
           border-left-color: @tooltips;
         }
-        &.syntax--bottom .tooltip-arrow {
+        &.bottom .tooltip-arrow {
           border-bottom-color: @tooltips;
         }
         &.bottom-left .tooltip-arrow {
