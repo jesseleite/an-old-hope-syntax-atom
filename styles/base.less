@@ -19,6 +19,7 @@ atom-text-editor {
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
+    border-right: solid 2px @syntax-gutter-background-color-selected;
 
     .line-number {
       &.cursor-line {
@@ -362,4 +363,9 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+atom-text-editor .scroll-view,
+:host .scroll-view {
+  padding-left: 10px;
 }
